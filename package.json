@@ -1,6 +1,6 @@
 {
   "name": "facily-cordova-plugin-accountkit",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Cordova AccountKit Plugin",
   "cordova": {
     "id": "facily-cordova-plugin-accountkit",
