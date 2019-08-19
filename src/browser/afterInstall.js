@@ -19,7 +19,7 @@ function readConfig() {
 
           var plugins = result.widget.plugin;
           var config = plugins.find(function(plugin) {
-            return plugin.$.name === 'cordova-plugin-accountkit';
+            return plugin.$.name === 'facily-cordova-plugin-accountkit';
           });
 
           fulfill(config);
@@ -56,7 +56,7 @@ readConfig().then(function(config) {
       'browser',
       'platform_www',
       'plugins',
-      'cordova-plugin-accountkit',
+      'facily-cordova-plugin-accountkit',
       'src',
       'browser',
       'AccountKitOnInteractive.js');

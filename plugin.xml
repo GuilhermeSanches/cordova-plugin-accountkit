@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="cordova-plugin-accountkit"
+    id="facily-cordova-plugin-accountkit"
     version="1.4.0">
     <name>Cordova AccountKit</name>
     <description></description>
@@ -10,8 +10,6 @@
     <repo>https://github.com/guilhermesanches/cordova-plugin-accountkit.git</repo>
     <issue>https://github.com/guilhermesanches/cordova-plugin-accountkit/issues</issue>
 
-    <preference name="APP_ID" />
-    <preference name="APP_NAME" />
     <preference name="CLIENT_TOKEN" />
     <preference name="API_VERSION" />
 
@@ -70,8 +68,8 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="application">
-            <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id" />
-            <meta-data android:name="com.facebook.accountkit.ApplicationName" android:value="@string/fb_app_name" />
+            <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="177877439540528" />
+            <meta-data android:name="com.facebook.accountkit.ApplicationName" android:value="Facily" />
             <meta-data android:name="com.facebook.accountkit.ClientToken" android:value="@string/accountkit_token" />
             <meta-data android:name="com.facebook.accountkit.FacebookAppEventsEnabled" android:value="false"/>
 
@@ -80,7 +78,7 @@
                     <action android:name="android.intent.action.VIEW" />
                     <category android:name="android.intent.category.DEFAULT" />
                     <category android:name="android.intent.category.BROWSABLE" />
-                    <data android:scheme="ak$APP_ID" />
+                    <data android:scheme="ak177877439540528" />
                 </intent-filter>
             </activity>
         </config-file>
@@ -113,7 +111,7 @@
         <source-file src="src/ios/AKPluginViewController.m" />
 
         <config-file target="*-Info.plist" parent="FacebookAppID">
-            <string>$APP_ID</string>
+            <string>177877439540528</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="AccountKitClientToken">
@@ -125,7 +123,7 @@
             <dict>
               <key>CFBundleURLSchemes</key>
               <array>
-                <string>ak$APP_ID</string>
+                <string>ak177877439540528</string>
               </array>
             </dict>
           </array>
