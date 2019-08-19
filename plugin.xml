@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="https://github.com/guilhermesanches/cordova-plugin-accountkit.git"
+    id="cordova-plugin-accountkit"
     version="1.4.0">
     <name>Cordova AccountKit</name>
     <description></description>
